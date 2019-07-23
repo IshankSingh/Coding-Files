@@ -8,7 +8,7 @@
 #include <math.h>
 using namespace std;
 
-//This is naive method (not a best approach) as it solves the problem in pow((n-2),2) + n complexity.
+//This is naive method (not a best approach) as it solves the problem in pow((n-1),2) + n complexity.
 int total_open_doors(int n)
 {
     vector<unsigned int> num(n);
