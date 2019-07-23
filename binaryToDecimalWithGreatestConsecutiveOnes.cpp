@@ -15,11 +15,6 @@ int main()
         v.push_back(i);
         num = num / 2;
     }
-    // while (!v.empty())
-    // {
-    //     cout << v.back();
-    //     v.pop_back();
-    // }
 
     int count = 0, total = 0;
     for (int i = v.size() - 1; i >= 0; i--)
