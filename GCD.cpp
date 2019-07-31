@@ -13,6 +13,8 @@
  *                          Proof : a = a' + bq
  *                          We can see that a is equal to a' + bq as a' is the remainder. Therefore, if d devides both a and b then it divides
  *                          a' + bq which means it divides both a' and b
+ * 
+ *  Eucleadean Algorithm has complexity of Big O(logn)
  */
 
 #include <iostream>
