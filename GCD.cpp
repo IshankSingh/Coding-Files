@@ -21,6 +21,7 @@
 
 using namespace std;
 
+//naive algorithm
 int getGCD(int a, int b)
 {
     int min = a < b ? a : b;
@@ -36,6 +37,7 @@ int getGCD(int a, int b)
     return best;
 }
 
+//Eucledean Algorithm
 int euclideanGCD(int a, int b)
 {
     if (b == 0)
