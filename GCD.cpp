@@ -64,6 +64,4 @@ int main(void)
     //Eucledean Algorithm
     int gcd = euclideanGCD(a, b);
     cout << "The GCD of " << a << " and " << b << " is " << gcd;
-
-    return 0;
 }
