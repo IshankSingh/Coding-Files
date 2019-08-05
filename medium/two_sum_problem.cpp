@@ -41,11 +41,6 @@ map<int, int> two_sum_pair(vector<int> arr, int sum)
         }
     }
 
-    for (auto x : second)
-    {
-        cout << x.first << ", " << x.second << "\n";
-    }
-
     return first;
 }
 
@@ -65,7 +60,6 @@ int main()
 
     map<int, int> two_pair_sum = two_sum_pair(arr, sum);
     map<int, int>::iterator itr;
-    cout << "First begins\n";
     for (itr = two_pair_sum.begin(); itr != two_pair_sum.end(); ++itr)
     {
         cout << itr->first << ", " << itr->second << "\n";
