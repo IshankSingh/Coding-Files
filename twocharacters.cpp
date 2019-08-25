@@ -1,9 +1,3 @@
-#include <iostream>
-#include <vector>
-#include <string>
-
-using namespace std;
-
 /*
  *  @author : Ishank Singh
  *  problem : Two Characters (HackerRank)
@@ -23,6 +17,11 @@ using namespace std;
  *       output :  5
  * 
  */
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
 
 bool checkConsecutiveString(string s)
 {
@@ -55,9 +54,12 @@ int alternate(string s)
                 }
             }
             if (!checkConsecutiveString(x))
+            {
                 tot = max(tot, (int)x.size());
+            }
         }
     }
+
     return tot;
 }
 
