@@ -5,7 +5,7 @@ using namespace std;
 
 /*
  * @author : Ishank Singh
- * problem : Diagonal Difference (HackerRank, Easy)
+ * problem : Diagonal Difference (HackerRank, Easy, algorithm)
  */
 
 int diagonaldifference(vector<vector<int>> arr)
