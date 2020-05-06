@@ -14,6 +14,10 @@ string checkParenthesis(char *c, int n)
     stack<char> s;
     for (char i = 0; i < n; i++)
     {
+        if (i == 0 && (c[i] == '}' || c[i] == ']' || c[i] == ')'))
+        {
+            return "Not balanced";
+        }
         if (c[i] == '{' || c[i] == '[' || c[i] == '(')
         {
             s.push(c[i]);
@@ -22,17 +26,20 @@ string checkParenthesis(char *c, int n)
         {
             s.pop();
         }
-        else continue;
+        else
+            continue;
     }
 
-    if(s.empty()) return "balanced";
-    else return "Not balanced";
+    if (s.empty())
+        return "balanced";
+
+    return "Not balanced";
 }
 
 int main()
 {
     char c[20];
     gets(c);
-    string s = checkParenthesis(c, strlen(c)); 
+    string s = checkParenthesis(c, strlen(c));
     cout << s;
 }

@@ -3,7 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceRoot}",
+                "${workspaceFolder}/**",
                 "C:\\MinGW\\lib\\gcc\\mingw32\\8.2.0\\include\\c++"
             ],
             "defines": [
@@ -11,7 +11,8 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "intelliSenseMode": "msvc-x64"
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "C:/MinGW/bin/g++.exe"
         }
     ],
     "version": 4

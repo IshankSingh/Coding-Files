@@ -9,7 +9,9 @@
             "command": "g++",
             "args": [
                 "-g",
-                "demo.cpp"
+                "${fileBasename}",
+                // "-o",
+                // "${fileBasename}.exe"
             ],
             "group": {
                 "kind": "build",
